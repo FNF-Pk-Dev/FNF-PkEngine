@@ -34,20 +34,19 @@ jobs:
           sudo apt-get install libvlc-dev
           sudo apt-get install libvlccore-dev
           haxelib setup ~/haxelib
-          haxelib install hxcpp > /dev/null
-          haxelib install lime
-          haxelib install openfl
-          haxelib --never install flixel
-          haxelib run lime setup flixel
-          haxelib run lime setup
+          haxelib install hxcpp
+          haxelib install lime 8.0.2
+          haxelib install openfl 9.1.0
+          haxelib --never install flixel 5.2.2
           haxelib install flixel-tools
-          haxelib install flixel-ui
-          haxelib install flixel-addons
+          haxelib install flixel-ui 2.6.1
+          haxelib install flixel-addons 2.11.0
           haxelib install tjson
           haxelib install hxjsonast
-          haxelib install hxCodec
-          haxelib git linc_luajit https://github.com/nebulazorua/linc_luajit
           haxelib install hscript
+          haxelib git modchart https://github.com/Ajwyunsx/FunkinModchart
+          haxelib install hxCodec 2.5.0
+          haxelib git linc_luajit https://github.com/AnDevGo/linc_luajit-S
           haxelib git hscript-ex https://github.com/ianharrigan/hscript-ex
           haxelib git discord_rpc https://github.com/Aidan63/linc_discord-rpc
           haxelib install hxcpp-debug-server
@@ -75,20 +74,19 @@ jobs:
       - name: Install Haxelib
         run: |
           haxelib setup C:/haxelib
-          haxelib install hxcpp > nul
-          haxelib install lime
-          haxelib install openfl
-          haxelib --never install flixel
-          haxelib run lime setup flixel
-          haxelib run lime setup
+          haxelib install hxcpp 
+          haxelib install lime 8.0.2
+          haxelib install openfl 9.1.0
+          haxelib --never install flixel 5.2.2
           haxelib install flixel-tools
-          haxelib install flixel-ui
-          haxelib install flixel-addons
+          haxelib install flixel-ui 2.6.1
+          haxelib install flixel-addons 2.11.0
           haxelib install tjson
           haxelib install hxjsonast
-          haxelib install hxCodec
-          haxelib git linc_luajit https://github.com/nebulazorua/linc_luajit
           haxelib install hscript
+          haxelib git modchart https://github.com/Ajwyunsx/FunkinModchart
+          haxelib install hxCodec 2.5.0
+          haxelib git linc_luajit https://github.com/AnDevGo/linc_luajit-S
           haxelib git hscript-ex https://github.com/ianharrigan/hscript-ex
           haxelib git discord_rpc https://github.com/Aidan63/linc_discord-rpc
           haxelib install hxcpp-debug-server
