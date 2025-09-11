@@ -3138,7 +3138,7 @@ class FunkinLua {
 			if(lua == null) return Function_Continue;
 
 			// If successful, pass and then return the result.
-			var result:Dynamic = interp.callFunc(func, args);
+			var result:Dynamic = lua.callFunc(func, args);
 			if (result == null) result = Function_Continue;
 			return result;
 		}
@@ -3225,9 +3225,7 @@ class FunkinLua {
 	#if LUA_ALLOWED
 	public function getBool(variable:String) {
 		var result:String = null;
-		Lua.getglobal(lua, variable);
-		result = Convert.fromLua(lua, -1);
-		Lua.pop(lua, 1);
+		result = lua.getVar(variable);
 
 		if(result == null) {
 			return false;
