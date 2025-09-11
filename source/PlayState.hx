@@ -3352,13 +3352,7 @@ class PlayState extends MusicBeatState
 		setOnLuas('cameraY', camFollowPos.y);
 		setOnLuas('botPlay', cpuControlled);
 		callOnLuas('onUpdatePost', [elapsed]);
-		for (shader in animatedShaders)
-			{
-				shader.update(elapsed);
-			}
-		for (i in shaderUpdates){
-			i(elapsed);
-			}
+
 	}
 
 	function openPauseMenu()
